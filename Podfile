@@ -5,5 +5,10 @@ pod 'Alamofire'
 pod 'SVProgressHUD'
 pod 'SnapKit'
 pod 'SDWebImage'
-pod ‘React’
-pod ‘React/RCTText’
+pod 'React'
+pod 'React', :subspecs => [
+'RCTText',
+'RCTImage',
+'RCTNetwork',
+'RCTWebSocket'
+]
