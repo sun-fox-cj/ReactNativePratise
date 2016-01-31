@@ -13,6 +13,7 @@
 		2A2842E31C5CE57900260043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2842E21C5CE57900260043 /* Assets.xcassets */; };
 		2A2842E61C5CE57900260043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2842E41C5CE57900260043 /* LaunchScreen.storyboard */; };
 		2A2842F31C5CF29800260043 /* index.ios.js in Resources */ = {isa = PBXBuildFile; fileRef = 2A2842F21C5CF29800260043 /* index.ios.js */; };
+		2A2842F51C5D05A900260043 /* SearchPage.js in Resources */ = {isa = PBXBuildFile; fileRef = 2A2842F41C5D05A900260043 /* SearchPage.js */; };
 		909985BF7D030C5410F77DE5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D738C42E4A58A0E0C1257C8 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		2A2842E71C5CE57900260043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A2842ED1C5CF06D00260043 /* ReactNativePratise-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativePratise-Bridging-Header.h"; sourceTree = "<group>"; };
 		2A2842F21C5CF29800260043 /* index.ios.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.ios.js; sourceTree = "<group>"; };
+		2A2842F41C5D05A900260043 /* SearchPage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = SearchPage.js; sourceTree = "<group>"; };
 		4EA9B89CFECE48E2109BC47C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8D738C42E4A58A0E0C1257C8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1567CFA3A2AE1C30686629B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				2A2842F21C5CF29800260043 /* index.ios.js */,
+				2A2842F41C5D05A900260043 /* SearchPage.js */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2842F31C5CF29800260043 /* index.ios.js in Resources */,
+				2A2842F51C5D05A900260043 /* SearchPage.js in Resources */,
 				2A2842E61C5CE57900260043 /* LaunchScreen.storyboard in Resources */,
 				2A2842E31C5CE57900260043 /* Assets.xcassets in Resources */,
 				2A2842E11C5CE57900260043 /* Main.storyboard in Resources */,
