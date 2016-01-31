@@ -10,5 +10,6 @@ pod 'React', :subspecs => [
 'RCTText',
 'RCTImage',
 'RCTNetwork',
-'RCTWebSocket'
+'RCTWebSocket',
+'RCTGeolocation'
 ]

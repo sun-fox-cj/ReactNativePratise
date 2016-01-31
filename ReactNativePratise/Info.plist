@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>我想偷窥你的隐私</string>
+	<string>哥要偶尔偷窥一下你的隐私</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>哥想偷窥你隐私</string>
 	<key>CFBundleDisplayName</key>
 	<string>JS练习</string>
 	<key>NSAppTransportSecurity</key>

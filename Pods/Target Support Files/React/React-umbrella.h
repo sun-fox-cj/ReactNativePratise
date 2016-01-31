@@ -90,6 +90,7 @@
 #import "RCTWrapperViewController.h"
 #import "UIView+Private.h"
 #import "UIView+React.h"
+#import "RCTLocationObserver.h"
 #import "RCTCameraRollManager.h"
 #import "RCTGIFImage.h"
 #import "RCTImageDownloader.h"
