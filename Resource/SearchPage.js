@@ -2,6 +2,7 @@
 'use strict';
 
 var React = require('react-native');
+var SearchResults = require('./SearchResults')
 
 var {
   StyleSheet,
@@ -38,6 +39,11 @@ _handleResponse(response) {
   this.setState({ isLoading: false , message: '' });
   if (response.application_response_code.substr(0, 1) === '1') {
     console.log('Properties found: ' + response.listings.length);
+    this.props.navigator.push({
+  title: 'Results',
+  component: SearchResults,
+  passProps: {listings: response.listings}
+});
   } else {
     this.setState({ message: 'Location not recognized; please try again.'});
   }
@@ -66,6 +72,21 @@ _handleResponse(response) {
   onSearchPressed() {
     var query = urlForQueryAndPage('place_name', this.state.searchString, 1);
     this._executeQuery(query);
+  }
+
+  onLocationPressed() {
+    navigator.geolocation.getCurrentPosition(
+      location => {
+        var search = location.coords.latitude + ',' + location.coords.longitude;
+        this.setState({ searchString: search });
+        var query = urlForQueryAndPage('centre_point', search, 1);
+        this._executeQuery(query);
+      },
+      error => {
+        this.setState({
+          message: 'There was a problem with obtaining your location: ' + error
+        });
+      });
   }
 
   constructor(props) {
@@ -108,8 +129,11 @@ var spinner = this.state.isLoading ?
           <Text style={styles.buttonText}>Go</Text>
         </TouchableHighlight>
         </View>
-        <TouchableHighlight style={styles.button}
-            underlayColor='#99d9f4'>
+        <TouchableHighlight 
+            style={styles.button}
+            underlayColor='#99d9f4'
+            onPress={this.onLocationPressed.bind(this)}
+            >
           <Text style={styles.buttonText}>Location</Text>
         </TouchableHighlight>
         <Image source={require('image!house')} style={styles.image}/>
