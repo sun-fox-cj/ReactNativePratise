@@ -26,18 +26,19 @@ class SearchPage extends Component {
         </Text>
 
         <View style={styles.flowRight}>
-  <TextInput
-    style={styles.searchInput}
-    placeholder='Search via name or postcode'/>
-  <TouchableHighlight style={styles.button}
-      underlayColor='#99d9f4'>
-    <Text style={styles.buttonText}>Go</Text>
-  </TouchableHighlight>
-</View>
-<TouchableHighlight style={styles.button}
-    underlayColor='#99d9f4'>
-  <Text style={styles.buttonText}>Location</Text>
-</TouchableHighlight>
+        <TextInput
+          style={styles.searchInput}
+          placeholder='Search via name or postcode'/>
+        <TouchableHighlight style={styles.button}
+            underlayColor='#99d9f4'>
+          <Text style={styles.buttonText}>Go</Text>
+        </TouchableHighlight>
+        </View>
+        <TouchableHighlight style={styles.button}
+            underlayColor='#99d9f4'>
+          <Text style={styles.buttonText}>Location</Text>
+        </TouchableHighlight>
+        <Image source={require('image!house')} style={styles.image}/>
       </View>
     );
   }
@@ -87,6 +88,10 @@ searchInput: {
   borderColor: '#48BBEC',
   borderRadius: 8,
   color: '#48BBEC'
+},
+image: {
+  width: 217,
+  height: 138
 }
 });
 
