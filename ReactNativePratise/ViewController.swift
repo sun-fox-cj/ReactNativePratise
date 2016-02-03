@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    let jsCodeLocation = NSURL(string: "http://192.168.1.10:8081/Resource/index.ios.bundle")
+    let jsCodeLocation = NSURL(string: "http://localhost:8081/Resource/index.ios.bundle")
     
     let rootView = RCTRootView(bundleURL: jsCodeLocation, moduleName: "SimpleApp", initialProperties: nil, launchOptions: nil)
 
