@@ -16,6 +16,9 @@
 		2A2842F51C5D05A900260043 /* SearchPage.js in Resources */ = {isa = PBXBuildFile; fileRef = 2A2842F41C5D05A900260043 /* SearchPage.js */; };
 		2A6EA9891C5DB265000B37EC /* SearchResults.js in Resources */ = {isa = PBXBuildFile; fileRef = 2A6EA9881C5DB265000B37EC /* SearchResults.js */; };
 		2A6EA98B1C5DB581000B37EC /* PropertyView.js in Resources */ = {isa = PBXBuildFile; fileRef = 2A6EA98A1C5DB581000B37EC /* PropertyView.js */; };
+		2A9939F01C619EBF00196957 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9939EF1C619EBF00196957 /* EventViewController.swift */; };
+		2A9939F21C61A34800196957 /* event.ios.js in Resources */ = {isa = PBXBuildFile; fileRef = 2A9939F11C61A34800196957 /* event.ios.js */; };
+		2A9939F91C61AFD500196957 /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9939F81C61AFD500196957 /* CalendarManager.m */; };
 		909985BF7D030C5410F77DE5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D738C42E4A58A0E0C1257C8 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,10 @@
 		2A2842F41C5D05A900260043 /* SearchPage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = SearchPage.js; sourceTree = "<group>"; };
 		2A6EA9881C5DB265000B37EC /* SearchResults.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = SearchResults.js; sourceTree = "<group>"; };
 		2A6EA98A1C5DB581000B37EC /* PropertyView.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = PropertyView.js; sourceTree = "<group>"; };
+		2A9939EF1C619EBF00196957 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		2A9939F11C61A34800196957 /* event.ios.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = event.ios.js; sourceTree = "<group>"; };
+		2A9939F71C61AFD500196957 /* CalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarManager.h; sourceTree = "<group>"; };
+		2A9939F81C61AFD500196957 /* CalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarManager.m; sourceTree = "<group>"; };
 		4EA9B89CFECE48E2109BC47C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8D738C42E4A58A0E0C1257C8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1567CFA3A2AE1C30686629B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,10 +81,13 @@
 			children = (
 				2A2842DB1C5CE57900260043 /* AppDelegate.swift */,
 				2A2842DD1C5CE57900260043 /* ViewController.swift */,
+				2A9939EF1C619EBF00196957 /* EventViewController.swift */,
 				2A2842DF1C5CE57900260043 /* Main.storyboard */,
 				2A2842E21C5CE57900260043 /* Assets.xcassets */,
 				2A2842E41C5CE57900260043 /* LaunchScreen.storyboard */,
 				2A2842E71C5CE57900260043 /* Info.plist */,
+				2A9939F71C61AFD500196957 /* CalendarManager.h */,
+				2A9939F81C61AFD500196957 /* CalendarManager.m */,
 			);
 			path = ReactNativePratise;
 			sourceTree = "<group>";
@@ -85,6 +95,7 @@
 		2A2842F11C5CF29800260043 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				2A9939F11C61A34800196957 /* event.ios.js */,
 				2A2842F21C5CF29800260043 /* index.ios.js */,
 				2A2842F41C5D05A900260043 /* SearchPage.js */,
 				2A6EA9881C5DB265000B37EC /* SearchResults.js */,
@@ -173,6 +184,7 @@
 			files = (
 				2A2842F31C5CF29800260043 /* index.ios.js in Resources */,
 				2A6EA9891C5DB265000B37EC /* SearchResults.js in Resources */,
+				2A9939F21C61A34800196957 /* event.ios.js in Resources */,
 				2A2842F51C5D05A900260043 /* SearchPage.js in Resources */,
 				2A2842E61C5CE57900260043 /* LaunchScreen.storyboard in Resources */,
 				2A6EA98B1C5DB581000B37EC /* PropertyView.js in Resources */,
@@ -237,7 +249,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2842DE1C5CE57900260043 /* ViewController.swift in Sources */,
+				2A9939F91C61AFD500196957 /* CalendarManager.m in Sources */,
 				2A2842DC1C5CE57900260043 /* AppDelegate.swift in Sources */,
+				2A9939F01C619EBF00196957 /* EventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

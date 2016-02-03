@@ -3,3 +3,4 @@
 //
 
 #import <React/React-umbrella.h>
+#import "CalendarManager.h"

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
@@ -61,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="1007" y="1083"/>
         </scene>
-        <!--View Controller-->
+        <!--Event View Controller-->
         <scene sceneID="w8p-Dt-wtw">
             <objects>
-                <viewController id="bKv-8G-QyS" sceneMemberID="viewController">
+                <viewController id="bKv-8G-QyS" customClass="EventViewController" customModule="ReactNativePratise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5w8-Y4-Ii3"/>
                         <viewControllerLayoutGuide type="bottom" id="gCX-0N-XRc"/>
@@ -72,8 +73,34 @@
                     <view key="view" contentMode="scaleToFill" id="fGj-Xu-Hml">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3eW-wA-OCu">
+                                <rect key="frame" x="20" y="64" width="560" height="200"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="jlK-X4-mgt"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrC-B7-Lff">
+                                <rect key="frame" x="277" y="294" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="jsEvent:" destination="bKv-8G-QyS" eventType="touchUpInside" id="OoF-Er-Bxm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3eW-wA-OCu" firstAttribute="leading" secondItem="fGj-Xu-Hml" secondAttribute="leadingMargin" id="4F3-aa-PSR"/>
+                            <constraint firstItem="3eW-wA-OCu" firstAttribute="top" secondItem="5w8-Y4-Ii3" secondAttribute="bottom" id="Ih7-jb-HaP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3eW-wA-OCu" secondAttribute="trailing" id="XYj-ow-Sqg"/>
+                            <constraint firstItem="DrC-B7-Lff" firstAttribute="centerX" secondItem="fGj-Xu-Hml" secondAttribute="centerX" id="jl0-OV-Ics"/>
+                            <constraint firstItem="DrC-B7-Lff" firstAttribute="top" secondItem="3eW-wA-OCu" secondAttribute="bottom" constant="30" id="jnE-rh-4vz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="centerView" destination="3eW-wA-OCu" id="LsM-eM-JXl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSb-23-xYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
